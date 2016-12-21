@@ -55,6 +55,7 @@ fzf-history-widget() {
     num=$selected[1]
     if [ -n "$num" ]; then
       zle vi-fetch-history -n $num
+      zle accept-line
     fi
   fi
   zle redisplay
